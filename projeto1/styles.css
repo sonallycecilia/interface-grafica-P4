@@ -1,5 +1,6 @@
 body {
-    background-image: url('https://i.pinimg.com/736x/20/08/ab/2008abe9c844cbd3482d4a2321e231d2.jpg');
+    background-image: url('https://raw.githubusercontent.com/sonallycecilia/interface-grafica-P4/main/projeto1/background-survey-form.jpg?token=GHSAT0AAAAAACV6J2FVPFSAB4SICMZ66V26ZWSVD4Q');
+    background-color: #f1deea;
     background-repeat: repeat;
     font-size: 20px;
     padding: 20px;
@@ -13,13 +14,13 @@ h1 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-family: Courier, monospace;
-    color: white;
     text-align: center;
 }
 
 h2{
     font-size: 25px;
     text-align: left;
+    margin-top: 0;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -45,13 +46,15 @@ h1, h2, p, label{
 fieldset {
     background-color: #8B008B;
     width: 50%;
-    margin: 0 auto; /* Centraliza o fieldset horizontalmente */
+    margin: 20px auto; /* Centraliza o fieldset horizontalmente */
     padding: 20px;
-    border: 2px solid white; /* Corrigido */
+    border: 20px solid transparent;
+    border-radius: 20px;
 }
 
 input, textarea, select {
-    margin: 5px 0 0 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
     min-height: 2em;
     color: black;
@@ -60,17 +63,19 @@ input, textarea, select {
 
 .inline {
     width: auto;
-    margin-right: 8px; /* Espaçamento entre o botão e o texto */
+    margin-right: 5px; /* Espaçamento entre o botão e o texto */
     vertical-align: middle;
+    min-height: 0;
 }
 
 .options {
     font-size: 15px;
-    margin-bottom: 10px;
 }
 
 input[type="radio"],
 input[type="checkbox"]{
     padding: 0;
     vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
