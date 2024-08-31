@@ -6,12 +6,13 @@
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <fieldset class="title">
-        <h1 id="title">Survey Form</h1>
+    <fieldset id="title">
+        <h1 id="legend">Survey Form</h1>
         <p id="description">Join our code team!</p>
     </fieldset>
     <form action="" id="survey-form">
-        <fieldset class="essentials">
+        <fieldset id="essentials">
+            <h2 id="legend-essentials"">1. Essential Information</h2>
             <label for="name" id="name-label"># Name: 
                 <input placeholder="Enter your name" id="name" type="text" required>
             </label>
@@ -21,9 +22,11 @@
             <label for="age" id="number-label"># Age: 
                 <input placeholder="Enter your age" id="number" type="number" min=10 max=120>
             </label>
+        </fieldset>
 
-            <!-- Grupo de botões de rádio para gênero -->
-            <label for="gender"># Gender:</label>
+        <!-- Grupo de botões de rádio para gênero -->
+        <fieldset>
+            <h2 id="gender">2. Gender</h2>
             <label for="male" class="options">
                 <input class="inline" type="radio" id="male" name="gender" value="male"> male
             </label>
@@ -33,17 +36,20 @@
             <label for="non-binary" class="options">
                 <input class="inline" type="radio" id="non-binary" name="gender" value="non-binary" checked> non-binary
             </label>
+        </fieldset>
 
             <!-- Campo de seleção (dropdown) -->
-            <label for="dropdown"># How did you hear about our company?</label>
+        <fieldset>
+            <h2>3. About Yourself</h2>
+            <label for="dropdown"># Are you graduated?</label>
             <select id="dropdown" name="dropdown">
                 <option value="0">(select one)</option>
-                <option value="1">Talking with a friend</option>
-                <option value="2">Instagram post</option>
-                <option value="3">Youtube channel</option>
-                <option value="4">Other</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+                <option value="3">In process</option>
+                <option value="4">Other (with diplom)</option>
             </select>
-
+    
             <!-- Grupo de checkboxes para interesses de carreira -->
             <label># What are your career interests?</label>
             <label for="back-end" class="options">
