@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Corrigi a tag HTML -->
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <fieldset class="title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Join our code team!</p>
+    </fieldset>
+    <form action="" id="survey-form">
+        <fieldset class="essentials">
+            <label for="name" id="name-label"># Name: 
+                <input placeholder="Enter your name" id="name" type="text" required>
+            </label>
+            <label for="email" id="email-label"># Email: 
+                <input placeholder="Enter your email" id="email" type="email" required>
+            </label>
+            <label for="age" id="number-label"># Age: 
+                <input placeholder="Enter your age" id="number" type="number" min=10 max=120>
+            </label>
+
+            <!-- Grupo de botões de rádio para gênero -->
+            <label for="gender"># Gender:</label>
+            <label for="male" class="options">
+                <input class="inline" type="radio" id="male" name="gender" value="male"> male
+            </label>
+            <label for="female" class="options">
+                <input class="inline" type="radio" id="female" name="gender" value="female"> female
+            </label>
+            <label for="non-binary" class="options">
+                <input class="inline" type="radio" id="non-binary" name="gender" value="non-binary" checked> non-binary
+            </label>
+
+            <!-- Campo de seleção (dropdown) -->
+            <label for="dropdown"># How did you hear about our company?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="0">(select one)</option>
+                <option value="1">Talking with a friend</option>
+                <option value="2">Instagram post</option>
+                <option value="3">Youtube channel</option>
+                <option value="4">Other</option>
+            </select>
+
+            <!-- Grupo de checkboxes para interesses de carreira -->
+            <label># What are your career interests?</label>
+            <label for="back-end" class="options">
+                <input class="inline" type="checkbox" id="back-end" value="back-end"> Back-end
+            </label>
+            <label for="database" class="options">
+                <input class="inline" type="checkbox" id="database" value="database"> Database
+            </label>
+            <label for="data-science" class="options">
+                <input class="inline" type="checkbox" id="data-science" value="data-science"> Data Science
+            </label>
+            <label for="front-end" class="options">
+                <input class="inline" type="checkbox" id="front-end" value="front-end"> Front-end
+            </label>
+            <label for="software-engineer" class="options">
+                <input class="inline" type="checkbox" id="software-engineer" value="software-engineer"> Software Engineer
+            </label>
+
+            <!-- Campo de texto para descrição -->
+            <label for="bio"># Describe yourself and your abilities: </label>
+            <textarea name="bio" id="bio" placeholder="I like to code and..." cols="30" rows="10"></textarea>
+
+            <!-- Botão de envio -->
+            <input type="submit" value="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
